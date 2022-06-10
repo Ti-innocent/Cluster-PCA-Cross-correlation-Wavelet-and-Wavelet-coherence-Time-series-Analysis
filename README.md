@@ -1,5 +1,5 @@
-- 👋 Hi, I’m @Ti-innocent
-- 👀 I’m interested in mathematical modelling using programming languages such as R, Python, tableau, c, c++ and matlab.
+- 👋 Hi, I’m @Innocent TWAGIRAYESU
+- 👀 I’m interested in mathematical modelling and data analysis using programming languages such as R, Python, tableau, c, c++ and matlab.
 - 🌱 I’m currently learning at AIMS
 - 💞️ I’m looking to collaborate on climate change and data analysis project
 - 📫 How to reach me via innocent.twagirayesu@aims.ac.rw and +250785427328
