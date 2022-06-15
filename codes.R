@@ -102,7 +102,7 @@ abline(reg = lm(prep1 ~ time(prep1)))
 plot(prep2, ylab = 'Yearly hazards', main = 'Time Series plot of RC3', col='black')
 abline(reg = lm(prep2 ~ time(prep2)))
 #dev.off()
-################################### detrend data and plot
+###################################### detrend data and plot
 tr1=lm(prep~c(1:length(prep)))
 RC1=residuals(tr1)
 tr2=lm(prep1~c(1:length(prep1)))
