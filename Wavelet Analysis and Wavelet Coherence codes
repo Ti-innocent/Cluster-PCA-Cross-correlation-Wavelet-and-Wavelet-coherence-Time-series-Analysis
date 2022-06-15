@@ -1,0 +1,27 @@
+#################################################################
+#                                                               #
+#                       Time Series Analysis                    #
+#             Wavelet Analysis and Wavelet Coherence            #
+#################                                 ###############
+#################################################################
+## Wavelet
+timelong=seq(2000, 2021-1, 1)  # indexing
+wavelet1=wt(cbind(timelong,RC1),dj=0.1,mother="morlet",max.scale=8) #wavelet
+wavelet2=wt(cbind(timelong,RC2),dj=0.1,mother="morlet",max.scale=8) #wavelet
+wavelet3=wt(cbind(timelong,RC3),dj=0.1,mother="morlet",max.scale=8) #wavelet
+## plot of wavelet
+#png('wavelet.png')
+#par(mfcol = c(1,1))
+par(oma=c(0, 0, 0, 1), mar=c(5, 4, 4, 5) + 0.1)
+xx=plot(wavelet1,  plot.cb = TRUE,lwd.coi = 1,col.coi="white",alpha.coi=0.5,col.sig="black",
+        lwd.sig = 2, ncol = 768, tol = 0.95, plot.phase=F,ylab="Period(Year)", xlab = "Time(Year)",
+        main='RC1')
+
+#par(oma=c(0, 0, 0, 1), mar=c(5, 4, 4, 5) + 0.1)
+yy=plot(wavelet2,  plot.cb = TRUE,lwd.coi = 1,col.coi="white",alpha.coi=0.5,col.sig="black",
+        lwd.sig = 2, ncol = 768, tol = 0.95, plot.phase=F,ylab="Period(Year)", xlab = "Time(Year)",
+        main='RC2')
+
+zz=plot(wavelet3,  plot.cb = TRUE,lwd.coi = 1,col.coi="white",alpha.coi=0.5,col.sig="black",
+        lwd.sig = 2, ncol = 768, tol = 0.95, plot.phase=F,ylab="Period(Year)", xlab = "Time(Year)",
+        main='RC3')
